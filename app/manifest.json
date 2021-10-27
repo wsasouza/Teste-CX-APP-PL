@@ -1,0 +1,25 @@
+{
+  "name": "Test APP",
+  "author": {
+    "name": "Rodolfo Oliveira",
+    "email": "rodolfo.oliveira@eteg.com.br",
+    "url": "https://eteg.com.br"
+  },
+  "defaultLocale": "pt",
+  "private": true,
+  "location": {
+    "support": {
+      "user_sidebar": "assets/iframe.html"
+    }
+  },
+  "parameters": [
+    {
+      "name": "apiBaseUrl",
+      "type": "text",
+      "required": false,
+      "default": "https://yourAPIEnvURL/requests"
+    }
+  ],
+  "version": "1.4",
+  "frameworkVersion": "2.0"
+}
