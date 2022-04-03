@@ -39,9 +39,35 @@ const submitForm = async (cep) => {
   return localization;
 };
 
+const formatPlace = (place) => {
+  if (place.complemento === '') {
+    const formattedPlace = `
+      Olá! Seguem os dados referentes ao CEP: ${place.cep}. \n
+      Logradouro: ${place.logradouro}    
+      Bairro: ${place.bairro} 
+      Cidade: ${place.localidade} 
+      Estado: ${place.uf}
+    `;
+
+    return formattedPlace;
+  }
+
+  const formattedPlace = `
+    Olá! Seguem os dados referentes ao CEP: ${place.cep}. \n
+    Logradouro: ${place.logradouro}   
+    Complemento: ${place.complemento}  
+    Bairro: ${place.bairro} 
+    Cidade: ${place.localidade} 
+    Estado: ${place.uf}
+  `;
+
+  return formattedPlace;
+};
+
 const Core = {
   app,
   submitForm,
+  formatPlace,
 };
 
 export default Core;

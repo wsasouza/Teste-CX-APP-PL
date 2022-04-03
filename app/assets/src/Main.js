@@ -1,7 +1,6 @@
 import Core from './Core.js';
 
 const client = ZAFClient.init();
-let settings;
 
 // client.metadata().then((metadata) => {
 //   settings = metadata.settings;
@@ -13,6 +12,7 @@ const Main = async () => {
 
   App.innerHTML = appBody;
 
+  // Jquery - float label
   $(function () {
     $('input').focus(function () {
       $(this).parent().addClass('active');
@@ -29,10 +29,17 @@ const Main = async () => {
   document.getElementById('form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const cep = await document.getElementById('cep').value;
-    if (cep !== '') {
-      const textInput = await Core.submitForm(cep);
-      client.trigger('test', textInput);
+
+    // if the cep format is valid
+    if (cep !== '' && cep.length === 9) {
+      const place = await Core.submitForm(cep);
+
+      if (place) {
+        const formattedPlace = Core.formatPlace(place);
+        client.trigger('published', formattedPlace);
+      }
     }
+    form.reset();
   });
 };
 
