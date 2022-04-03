@@ -19,6 +19,9 @@ const app = `
   </div>
 </form>
 
+<hr>
+  <div id="last-tickets"></div>
+
 </div>
 `;
 
@@ -39,6 +42,7 @@ const submitForm = async (cep) => {
   return localization;
 };
 
+// Formatting places
 const formatPlace = (place) => {
   if (place.complemento === '') {
     const formattedPlace = `
