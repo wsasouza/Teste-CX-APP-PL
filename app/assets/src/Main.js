@@ -1,18 +1,23 @@
-import Core from "./Core.js";
+import Core from './Core.js';
 
 const client = ZAFClient.init();
 let settings;
 
-client.metadata().then((metadata) => {
-  settings = metadata.settings;
-});
+// client.metadata().then((metadata) => {
+//   settings = metadata.settings;
+// });
 
 const Main = async () => {
-  const App = document.getElementById("app");
-  let appBody = `<div id="main-content"></div>`;
+  const App = document.getElementById('app');
+  let appBody = `<div id="main-content">${Core.app}</div>`;
 
-  // Write App
   App.innerHTML = appBody;
+
+  document.getElementById('form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const textInput = await Core.submitForm();
+    client.trigger('test', textInput);
+  });
 };
 
 export default Main;
