@@ -93,8 +93,8 @@ header span {
 }
 
 button {
-  background: #fff ;
-  color: #fe4400;
+  background: #fff; 
+  color: var(--title);
   padding: 10px 20px;
   border: none;
   outline: none;
@@ -103,6 +103,11 @@ button {
   cursor: pointer;  
   transition: 0.5s;  
   font-weight: 500;
+}
+
+button:hover {
+  background: var(--action);
+  color: #fff; 
 }
 
 
