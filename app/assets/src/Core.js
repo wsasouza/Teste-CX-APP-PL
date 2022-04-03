@@ -1,11 +1,22 @@
 const app = `
+<div class="container">
+<header>
+  <img src="./images/eteg-logo.png" alt="logotipo eteg tecnologia">
+  <span>Walter S. A. Souza</span> 
+</header>
 <form id="form">
-  <h2>Testando escrita no Ticket</h2>
-  <div>
-    <input id="text" type="text" placeholder="texto simples" />
-    <button type="submit">Enviar</button>
+  <div class="title">
+    <span class="icon"><i class="fas fa-map-marker-alt"></i></span>
+    <h2>Busca de endereço por CEP</h2>
   </div>
+  <div class="inputBox">
+    <input id="cep" type="text" oninput="cepMask(this)"/>    
+    <label for="cep">Digite o CEP</label>
+  </div>
+  <button type="submit">Enviar</button>
 </form>
+
+</div>
 `;
 
 const submitForm = async () => {

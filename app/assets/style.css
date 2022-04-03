@@ -1,6 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+:root {
+  --background: rgb(23,73,77,0.3);
+  --title: #30668c;
+  --text: #606062;
+  --action: #ff4600;
+  --default: #b8b8c0;
+  --success: #006400;
+  --error: #ff0000;
+}
+
 * {
   box-sizing: border-box;
 }
 html {
   overflow-y: auto;
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background: var(--background);
+  border-radius: 8px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header span {
+  color: var(--text)
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title .icon {
+  display: inline-block;
+  font-size: 22px;
+  width: 25px;
+  color: var(--title);
+}
+
+.title h2 {
+  color: var(--title);
+}
+
+.inputBox {
+  position: relative;
+  margin: 40px 0 20px;
+  width: 100%;
+}
+
+.inputBox input {
+  position: absolute;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--default);
+  outline: none;
+  padding: 10px 0;
+  width: 100%;
+  color: var(--title);  
+  transition: 0.5s;  
+}
+
+.inputBox.active input {
+  border-bottom: 2px solid var(--action);
+}
+
+.inputBox label {
+  position: relative;  
+  color: var(--text);
+  padding: 10px 0;
+  display: inline-block;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox.active label {
+  color: var(--action);
+  transform: translateY(-30px);
+}
+
+button {
+  background: #fff ;
+  color: #fe4400;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin: 10px 0 0;
+  cursor: pointer;  
+  transition: 0.5s;  
+  font-weight: 500;
+}
+
+
+
+
+
+

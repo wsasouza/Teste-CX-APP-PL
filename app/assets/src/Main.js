@@ -13,6 +13,19 @@ const Main = async () => {
 
   App.innerHTML = appBody;
 
+  $(function () {
+    $('input').focus(function () {
+      $(this).parent().addClass('active');
+      $('input').focusout(function () {
+        if ($(this).val() == '') {
+          $(this).parent().removeClass('active');
+        } else {
+          $(this).parent().addClass('active');
+        }
+      });
+    });
+  });
+
   document.getElementById('form').addEventListener('submit', async (e) => {
     e.preventDefault();
     const textInput = await Core.submitForm();
