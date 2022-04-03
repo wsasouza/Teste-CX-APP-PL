@@ -92,7 +92,13 @@ header span {
   transform: translateY(-30px);
 }
 
-button {
+.inputFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputFooter button {
   background: #fff; 
   color: var(--title);
   padding: 10px 20px;
@@ -105,9 +111,13 @@ button {
   font-weight: 500;
 }
 
-button:hover {
+.inputFooter button:hover {
   background: var(--action);
   color: #fff; 
+}
+
+.inputFooter span {
+  color: var(--error);
 }
 
 

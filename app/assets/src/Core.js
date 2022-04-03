@@ -12,16 +12,31 @@ const app = `
   <div class="inputBox">
     <input id="cep" type="text" oninput="cepMask(this)"/>    
     <label for="cep">Digite o CEP</label>
+  </div> 
+  <div class="inputFooter">
+    <button type="submit">Enviar</button>
+    <span id="error"></span>
   </div>
-  <button type="submit">Enviar</button>
 </form>
 
 </div>
 `;
 
-const submitForm = async () => {
-  const text = await document.getElementById('text').value;
-  return text;
+const submitForm = async (cep) => {
+  const localization = await (
+    await fetch(`https://viacep.com.br/ws/${cep}/json/`)
+  ).json();
+
+  console.log(localization);
+
+  if (localization.erro) {
+    document.getElementById('error').innerHTML = 'CEP não encontrado';
+    return undefined;
+  }
+
+  document.getElementById('error').innerHTML = '';
+
+  return localization;
 };
 
 const Core = {

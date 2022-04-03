@@ -28,8 +28,11 @@ const Main = async () => {
 
   document.getElementById('form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    const textInput = await Core.submitForm();
-    client.trigger('test', textInput);
+    const cep = await document.getElementById('cep').value;
+    if (cep !== '') {
+      const textInput = await Core.submitForm(cep);
+      client.trigger('test', textInput);
+    }
   });
 };
 
