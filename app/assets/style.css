@@ -128,7 +128,7 @@ header span {
 
 .tickets hr {
   margin: 20px 10px;  
-  color: var(--action);
+  color: var(--title);
 }
 
 .tickets h2 {  
@@ -148,7 +148,7 @@ header span {
 
 .tickets a:hover {
   color: var(--actionBg);
-  background-color: var(--action);
+  background-color: var(--title);
 }
 
 .tickets p {  
