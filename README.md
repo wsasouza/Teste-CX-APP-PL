@@ -1,39 +1,58 @@
-# Teste ETEG CX APP - Pleno - Desenvolvedor Fullstack
+<div align="center" id="top"> 
+  <img src="./desafio-eteg.gif" alt="Teste ETEG CX APP PL" />
 
-`Olá, agradecemos seu interesse em fazer parte da ETEG!`
+&#xa0;
 
-### O que é o teste?
+  <!-- <a href="https://testecxapppl.netlify.app">Demo</a> -->
+</div>
 
-`O teste se resume na criação de um APP dentro da Zendesk, com as características citadas abaixo, utilizando apenas vanilla JavaScript junto a SDK que já está utilizada como exemplo no boilerplate na pasta app desse repositório. Boa sorte, e happy coding 😄`
+<h1 align="center">Teste CX APP PL</h1>
 
-### O que você precisa fazer?
+<p align="center">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/wsasouza/teste-cx-app-pl?color=30668C">
 
-1. Fork desse repositório, commitar todas as alterações ao decorrer do desenvolvimento.
-2. Alterar o manifest, para que o APP fique disponível ao invés da barra lateral de usuário, fique na página de tickets.
-3. Criação de um campo de texto e botão que atualizará o ticket atual com um comentário a partir da procura de um CEP (utilize a API https://viacep.com.br)
-4. (Bônus) ⭐ Utilizar a função `request` para listar os últimos tickets desse solicitante, abaixo do campo de texto e botão já criados.
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/wsasouza/teste-cx-app-pl?color=30668C">
 
-> Dicas: As [referênciais dos objetos do ticket](https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/#json-format) estão na documentação abaixo no Zendesk Support API.
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/wsasouza/teste-cx-app-pl?color=30668C">
 
-## Documentações úteis ZAF (Zendesk App Framework) e Zendesk Support API
+  <img alt="Last Commit" src="https://img.shields.io/github/last-commit/wsasouza/teste-cx-app-pl?color=30668C">  
+</p>
 
-- [Documentação do ZAF com as classes e funções que você pode utilizar dentro do APP, algumas delas já estão dentro da pasta de exemplo](https://developer.zendesk.com/api-reference/apps/apps-core-api/client_api)
-- [Documentação do Zendesk Support API para listagem de objetos do ticket](https://developer.zendesk.com/api-reference/ticketing/tickets/tickets/#json-format)
+<p align="center">
+<a href="#dart-brieffing">Brieffing</a> &#xa0; | &#xa0;
+  <a href="#dart-about">About</a> &#xa0; | &#xa0;   
+  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;  
+  <a href="#memo-license">License</a> &#xa0; | &#xa0;
+  <a href="https://github.com/wsasouza" target="_blank">Author</a>
+</p>
 
-## Alocando o APP na Zendesk
+<br>
 
-1. Crie uma conta Trial(gratuita) [clicando aqui](https://www.zendesk.com.br/register) para que você tenha acesso a Zendesk.
-2. Após validar seu email, entre na sua instância Zendesk.
-3. Vá em _Configurações > Gerenciar > Aplicativos Privados > Carregador aplicativo privado_ para que você possa testá-lo dentro da Zendesk. Atenção: Você precisa compactar em _.zip_ a pasta APP para carregá-lo.
+## :🕵🏽‍♂️: Brieffing
 
-![Admin Zendesk](admin_zendesk.png?raw=true)
+O que você precisa fazer?
+Fork desse repositório, commitar todas as alterações ao decorrer do desenvolvimento.
+Alterar o manifest, para que o APP fique disponível ao invés da barra lateral de usuário, fique na página de tickets.
+Criação de um campo de texto e botão que atualizará o ticket atual com um comentário a partir da procura de um CEP (utilize a API https://viacep.com.br)
+(Bônus) star Utilizar a função request para listar os últimos tickets desse solicitante, abaixo do campo de texto e botão já criados.
 
-## Visualizando o APP na Zendesk
+## :dart: About
 
-- Siga para Visualizações, e abra um ticket de teste.
+Aplicativo para o ambiente Zendesk que tem como objetivo atualizar um ticket com as informações de uma localidade buscada por meio de um CEP.
+O aplicativo lista também os tickets criados pelo solicitante.
 
-![Visualizações](visualizacoes.png?raw=true)
+## :sparkles: Features
 
-- Após entrar no ticket, siga para a barra lateral direita(sidebar), e selecione o menu APP's para visualizá-lo.
+:heavy_check_mark: Consulta de CEP;\
+:heavy_check_mark: Atualização do Ticket atual.;\
+:heavy_check_mark: Listagem dos últimos tickets do solicitante;
 
-![Ver APP no Ticket](ver_app_ticket.png?raw=true)
+## :memo: License
+
+This project is under license from MIT. For more details, see the [LICENSE](LICENSE.md) file.
+
+Made with :heart: by <a href="https://github.com/wsasouza" target="_blank">Walter Santos de Andrade Souza</a>
+
+&#xa0;
+
+<a href="#top">Back to top</a>
