@@ -19,7 +19,7 @@
 </p>
 
 <p align="center">
-<a href="#dart-brieffing">Brieffing</a> &#xa0; | &#xa0;
+<a href="#briefing">Brieffing</a> &#xa0; | &#xa0;
   <a href="#dart-about">About</a> &#xa0; | &#xa0;   
   <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;  
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
@@ -28,13 +28,13 @@
 
 <br>
 
-## 🕵🏽‍♂️ Brieffing
+## 🕵🏽‍♂️ Briefing
 
 O que você precisa fazer?
-Fork desse repositório, commitar todas as alterações ao decorrer do desenvolvimento.
-Alterar o manifest, para que o APP fique disponível ao invés da barra lateral de usuário, fique na página de tickets.
-Criação de um campo de texto e botão que atualizará o ticket atual com um comentário a partir da procura de um CEP (utilize a API https://viacep.com.br)
-(Bônus) star Utilizar a função request para listar os últimos tickets desse solicitante, abaixo do campo de texto e botão já criados.
+
+1. Alterar o manifest, para que o APP fique disponível ao invés da barra lateral de usuário, fique na página de tickets.
+2. Criação de um campo de texto e botão que atualizará o ticket atual com um comentário a partir da procura de um CEP (utilize a API https://viacep.com.br)
+3. (Bônus) ⭐️ Utilizar a função request para listar os últimos tickets desse solicitante, abaixo do campo de texto e botão já criados.
 
 ## :dart: About
 
