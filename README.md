@@ -28,7 +28,7 @@
 
 <br>
 
-## :🕵🏽‍♂️: Brieffing
+## 🕵🏽‍♂️ Brieffing
 
 O que você precisa fazer?
 Fork desse repositório, commitar todas as alterações ao decorrer do desenvolvimento.
