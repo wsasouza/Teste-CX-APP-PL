@@ -10,7 +10,8 @@ const Main = async (ticket_requester_id) => {
   const tickets = await client.request(
     `/api/v2/search.json?query=type:ticket requester_id:${ticket_requester_id}`
   );
-  console.log(tickets);
+
+  Core.requestTickets(tickets);
 
   const App = document.getElementById('app');
   let appBody = `<div id="main-content">${Core.app}</div>`;
