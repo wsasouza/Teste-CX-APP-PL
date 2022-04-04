@@ -2,10 +2,6 @@ import Core from './Core.js';
 
 const client = ZAFClient.init();
 
-client.metadata().then((metadata) => {
-  settings = metadata.settings;
-});
-
 const Main = async (ticket_requester_id) => {
   const tickets = await client.request(
     `/api/v2/search.json?query=type:ticket requester_id:${ticket_requester_id}`

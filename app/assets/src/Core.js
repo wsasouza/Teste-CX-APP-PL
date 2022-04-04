@@ -82,14 +82,18 @@ const requestTickets = async (tickets) => {
     };
   });
 
+  console.log(ticketsFormatted);
+
+  let ticketList = '';
+
   ticketsFormatted.forEach((ticket, index) => {
     const createdFormatted = formatDate(ticket.created);
-    const ticketList = `
+    ticketList += `
       <a href="${ticket.link}" target="_blank">${index + 1}. ${ticket.title}</a>
       <p>criado em ${createdFormatted}</p>      
     `;
-    document.getElementById('last-tickets').innerHTML = ticketList;
   });
+  document.getElementById('last-tickets').innerHTML = ticketList;
 };
 
 function formatDate(date) {

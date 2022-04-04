@@ -4,7 +4,7 @@ let client = ZAFClient.init();
 console.log(client);
 
 client.on('app.registered', (e) => {
-  client.invoke('resize', { width: '100%', height: '500px' });
+  client.invoke('resize', { width: '100%', height: '750px' });
 });
 
 // checking return params
